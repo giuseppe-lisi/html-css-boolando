@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/21bf8e5cf3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Boolando</title>
 </head>
 
@@ -15,7 +15,7 @@
 
         <div class="header-menu flex-container wrapper">
             <nav>
-                <ul class="flex-container header-nav-menu">
+                <ul class="flex-container list-style-none">
                     <li><a href="#">Donna</a></li>
                     <li><a href="#">Uomo</a></li>
                     <li><a href="#">Bambini</a></li>
@@ -24,10 +24,12 @@
 
             <img src="./img/boolean-logo.png" alt="Boolean Logo" class="logo">
 
-            <nav class="header-nav-user">
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+            <nav>
+                <ul class="flex-container list-style-none">
+                    <li><a href="#" class="fa fa-user"></a></li>
+                    <li><a href="#" class="fa fa-heart"></a></li>
+                    <li><a href="#" class="fa fa-shopping-cart"></a></li>
+                </ul>
             </nav>
         </div>
 
@@ -35,13 +37,99 @@
 
     <main>
     
-        <div class="card-container">
-
+        <div class="card-container wrapper flex-container">
+            <div class="card">
+                <img src="./img/1.webp">
+                <div>
+                    <p class="text-small text-gray">Levi's</p>
+                    <p class="text-bold">RELAXED FIT TEE UNISEX</p>
+                    <p class="text-small text-red">14,99 € <span class="strikethrough text-gray">29,99 €</span></p>
+                </div>
+                <div class="sale text-small">-50%</div>
+                <div class="sustainable text-small">Sostenibilità</div>
+                <div class="favorite"><i class="fa fa-heart"></i></div>
+            </div>
+            <div class="card">
+                <img src="./img/2.webp">
+                <div>
+                    <p class="text-small text-gray">Guess</p>
+                    <p class="text-bold">ROSES TEE</p>
+                    <p class="text-small text-red">20,99 € <span class="strikethrough text-gray">29,99 €</span></p>
+                </div>
+                <div class="sale text-small">-30%</div>
+                <div class="favorite"><i class="fa fa-heart"></i></div>
+            </div>
+            <div class="card">
+                <img src="./img/3.webp">
+                <div>
+                    <p class="text-small text-gray">Come Zucchero Filato</p>
+                    <p class="text-bold">VOGLIA DI COLORI PASTELLO</p>
+                    <p class="text-small text-red">129,99 € <span class="strikethrough text-gray">184,99 €</span></p>
+                </div>
+                <div class="sale text-small">-30%</div>
+                <div class="favorite"><i class="fa fa-heart"></i></div>
+            </div>
+            <div class="card">
+                <img src="./img/4.webp">
+                <div>
+                    <p class="text-small text-gray">Levi's</p>
+                    <p class="text-bold">TEE UNISEX</p>
+                    <p class="text-small text-red">14,99 € <span class="strikethrough text-gray">29,99 €</span></p>
+                </div>
+                <div class="sale text-small">-50%</div>
+                <div class="sustainable text-small">Sostenibilità</div>
+                <div class="favorite"><i class="fa fa-heart"></i></div>
+            </div>
+            <div class="card">
+                <img src="./img/5.webp">
+                <div>
+                    <p class="text-small text-gray">Maya Deluxe</p>
+                    <p class="text-bold">STRIPE BODICE</p>
+                    <p class="text-small text-red">99,99 €</p>
+                </div>
+                <div class="favorite"><i class="fa fa-heart"></i></div>
+            </div>
+            <div class="card">
+                <img src="./img/6.webp">
+                <div>
+                    <p class="text-small text-gray">Esprit</p>
+                    <p class="text-bold">MAGLIONE - BLACK</p>
+                    <p class="text-small text-red">14,99 € <span class="strikethrough text-gray">29,99 €</span></p>
+                </div>
+                <div class="sustainable no-sale text-small">Sostenibilità</div>
+                <div class="favorite"><i class="fa fa-heart"></i></div>
+            </div>
         </div>
-
+        
     </main>
-
+    
     <footer>
+
+        <div class="footer-menu wrapper flex-container">
+            <div>
+                <h3>Boolean s.r.l.</h3>
+                <nav>
+                    <ul class="flex-container list-style-none">
+                        <li><a href="#">Informazioni legali</a></li>
+                        <li><a href="#">Normativa sulla privacy</a></li>
+                        <li><a href="#">Diritto di recesso</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <h4>Trovaci anche su</h4>
+                <nav class="footer-nav-right">
+                    <ul class="flex-container list-style-none">
+                        <li><a href="#" class="fa fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+                        <li><a href="#" class="fa fa-pinterest"></a></li>
+                        <li><a href="#" class="fa fa-youtube"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
 
     </footer>
 

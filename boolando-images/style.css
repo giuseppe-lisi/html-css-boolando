@@ -14,12 +14,37 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
 }
 
 a {
     text-decoration: none;
     color: whitesmoke;
+}
+
+.list-style-none {
+    list-style-type: none;
+    gap: 1em;
+}
+
+.text-gray {
+    color: rgb(94, 94, 94);
+}
+
+.text-red {
+    color: rgb(222, 0, 0);
+}
+
+.text-small {
+    font-size: 0.8em;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.strikethrough {
+    text-decoration: line-through;
 }
 
 /* FINE CSS GENERICO */
@@ -29,33 +54,79 @@ a {
 
 header {
     background-color: #FF6801;
-    filter: drop-shadow(0px 0px 5px rgb(96, 96, 96))
+    filter: drop-shadow(0px 0px 5px rgb(96, 96, 96));
+    padding: 1em;
 }
 
 .header-menu {
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
-}
-
-.header-nav-menu {
-    list-style-type: none;
-    gap: 1em;
 }
 
 .logo {
     height: 2em;
 }
 
-.header-nav-user {
-
-}
+/* Main */
 
 .card-container {
-    min-height: 800px;
+    flex-wrap: wrap;
+    padding: 4em 1em;
+    gap: 1.2em;
 }
+
+.card {
+    width: calc(100% / 3 - 0.8em);
+    position: relative;
+}
+
+.card-container div img {
+    width: 100%;
+}
+
+.sale {
+    background-color: red;
+    color: whitesmoke;
+    padding: 0.5em;
+    max-width: fit-content;
+
+    position: absolute;
+    bottom: 15%;
+}
+
+.sustainable {
+    background-color: green;
+    color: whitesmoke;
+    padding: 0.5em;
+    max-width: fit-content;
+
+    position: absolute;
+    bottom: 15%;
+    left: 13%;
+}
+
+.no-sale {
+    bottom: 15%;
+    left: 0%;
+}
+
+.favorite {
+    background-color: white;
+    padding: 0.5em;
+    position: absolute;
+    top: 2%;
+    /* più carino con un po' di margine anche da destra */
+    right: 3%;
+}
+
+/* Footer */
 
 footer {
     background-color: #1A1A1A;
-    min-height: 80px;
+    color: whitesmoke;
+    padding: 1em;
+}
+
+.footer-menu {
+    justify-content: space-between;
 }
