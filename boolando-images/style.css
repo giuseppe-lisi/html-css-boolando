@@ -117,6 +117,11 @@ header {
     top: 2%;
     /* più carino con un po' di margine anche da destra */
     right: 3%;
+    transition: 0.25s;
+}
+
+.favorite:hover {
+    color: red;
 }
 
 /* Footer */
