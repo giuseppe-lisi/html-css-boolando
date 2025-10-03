@@ -102,7 +102,6 @@ header {
     background-color: red;
     color: whitesmoke;
     padding: 0.5em;
-    max-width: fit-content;
 
     position: absolute;
     bottom: 15%;
@@ -113,7 +112,6 @@ header {
     background-color: green;
     color: whitesmoke;
     padding: 0.5em;
-    max-width: fit-content;
 
     position: absolute;
     bottom: 15%;
@@ -147,9 +145,11 @@ header {
 footer {
     background-color: #1A1A1A;
     color: whitesmoke;
-    padding: 1em;
+    border-bottom: 2px solid whitesmoke;
+    padding: 1.5em;
 }
 
 .footer-menu {
     justify-content: space-between;
+    line-height: 1.5em;
 }
